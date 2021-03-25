@@ -8,14 +8,16 @@ public class User {
     private final String userCountry;
     private final String userSex;
     private final String userSexPref;
+    private final Integer userAge;
 
-    public User(String userEmail, String userName, String userTweeter, String userCountry, String userSex, String userSexPref) {
+    public User(String userEmail, String userName, String userTweeter, String userCountry, String userSex, String userSexPref, Integer userAge) {
         this.userEmail = userEmail;
         this.userName = userName;
         this.userTweeter = userTweeter;
         this.userCountry = userCountry;
         this.userSex = userSex;
         this.userSexPref = userSexPref;
+        this.userAge = userAge;
     }
 
     public String getUserEmail() {
@@ -40,5 +42,8 @@ public class User {
 
     public String getUserSexPref() {
         return userSexPref;
+    }
+    public Integer getUserAge() {
+        return userAge;
     }
 }
